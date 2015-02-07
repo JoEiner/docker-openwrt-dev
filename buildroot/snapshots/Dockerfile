@@ -1,4 +1,4 @@
-FROM leesah/openwrt-base:latest
+FROM leesah/openwrt-dev-base:latest
 
 RUN git clone --bare --depth 1 git://git.openwrt.org/openwrt.git .git \
  && git config core.bare false \
