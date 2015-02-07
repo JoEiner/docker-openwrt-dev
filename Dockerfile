@@ -6,7 +6,7 @@ RUN apt-get update \
  && apt-get clean \
  && adduser --disabled-password --no-create-home --gecos '' openwrt \
  && echo 'openwrt ALL=NOPASSWD: ALL' > /etc/sudoers.d/openwrt \
- && chmod a+w /home/
+ && chmod a+w /home/ \
  && sudo -iu openwrt git clone git://git.openwrt.org/openwrt.git /home/ \
  && sudo -iu openwrt scripts/feeds update
 
